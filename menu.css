@@ -1,0 +1,82 @@
+
+h3 { text-align: left;
+color: #333; }
+
+#carousel {
+  display: flex;
+  overflow-x: auto;
+  -ms-overflow-style: none; /* Hide the scrollbar for MS Edge */
+  scrollbar-width: none; /* Hide the scrollbar for Mozilla Firefox */
+
+  margin: 0 auto 0 auto;
+  width: 90vw;
+  height: fit-content;
+  
+  border: solid #F3E6FF .5px;
+}
+
+#carousel::-webkit-scrollbar {
+  display: none; /* Hide the scrollbar on Webkit based browsers (Chrome, Safari, etc) */
+  -webkit-overflow-scrolling: touch; /* On touch screens the content continues to scroll for a while after finishing the scroll gesture */
+}
+
+/* .item {
+  min-width: 300px;
+  min-height: 20vh;
+  margin: 15px;
+
+  font-size: 5em;
+  text-align: center;
+  line-height: 300px;
+  background-color: #FFF9EF;
+  border-radius: 7px;
+} */
+/* .polaroid{
+    max-width: 280px;
+    max-height: 18vh;
+    padding: 2em;
+    
+}
+img{
+    max-width: 280px;
+    max-height: 18vh;
+    padding: 2em;
+    overflow: hidden;
+} */
+
+.polaroid a {
+    background: #ffffff;
+    display: inline-block;
+    margin: 55px 75px 30px;
+    padding: 15px 15px 30px;
+    text-align: center;
+    text-decoration: none;
+    -webkit-box-shadow: 0 4px 6px rgba(0, 0, 0, .3);
+    -moz-box-shadow: 0 4px 6px rgba(0, 0, 0, .3);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, .3);
+    -webkit-transition: all .20s linear;
+    -moz-transition: all .20s linear;
+    transition: all .20s linear;
+    z-index: 0;
+    position: relative;
+  }
+  .polaroid a:after {
+    color: #333;
+    font-size: 25px;
+    content: attr(title);
+    position: relative;
+    top: 15px;
+  }
+  .polaroid img {
+    display: block;
+    width: 250px;
+  }
+  .polaroid a:hover {
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    transform: scale(1.2);
+    z-index: 10;
+    -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, .7);
+    -moz-box-shadow: 0 10px 20px rgba(0, 0, 0, .7);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, .7);
+  }
